@@ -25,7 +25,7 @@ export const getFirebaseItems = async () => {
     const items = getAllTodosFireBase.docs.map(
       (doc) => ({ ...doc.data(), id: doc.id })
     );
-    return items;
+    return ite
   } catch (err) {
     console.log(err);
     return [];
